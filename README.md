@@ -1,4 +1,4 @@
-# Frontend Mentor - [Project Name]
+# Frontend Mentor - NFT PREVIEW CARD COMPONENT
 
 ![Design preview for the [Project Name] challenge](preview.jpg)
 
