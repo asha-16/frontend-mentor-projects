@@ -1,10 +1,10 @@
-# Frontend Mentor - NFT PREVIEW CARD COMPONENT
+# NFT PREVIEW CARD COMPONENT
 
 ![Design preview for the [Project Name] challenge](preview.jpg)
 
 ## Overview
 
-This is my solution to the **[NFT PREVIEW CARD COMPONENT]** challenge on [Frontend Mentor](https://www.frontendmentor.io).  
+This is my solution to the **[NFT PREVIEW CARD COMPONENT]** challenge on [Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U).  
 The goal was to build a responsive component that matches the provided design using **HTML and CSS**.
 
 ---
