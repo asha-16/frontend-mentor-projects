@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  background-color: hsl(216, 50%, 16%);
+  max-width: 400px;
+  width: 90%;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.value-time-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid hsl(215, 32%, 27%);
+  padding-bottom: 20px;
+}
+
+.value, .time{
+  display: flex;
+  gap: 8px;
+}
+
+.creator {
+  display: flex;
+  gap: 10px;
+}
+
+.equilibrium-image {
+  border-radius: 20px;
+  width: 100%;
+}
+
+h1{
+  color: hsl(0, 0%, 100%);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.value p {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+.creator img {
+  width: 30px;
+}
+
+.creator p span {
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution-links {
+  text-decoration: none;
+}
+
+.attribution-links:link, .attribution-links:visited {
+  color: hsl(178, 100%, 50%);
+}
+
+.attribution-links:hover, .attribution-links:active {
+  color: hsl(215, 51%, 70%);
+}
