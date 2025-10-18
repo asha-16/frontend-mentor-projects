@@ -147,6 +147,11 @@ body{
     text-decoration: none;
 }
 
+.attribution a:link, .attribution a:visited {
+    text-decoration: none;
+    color: var(--primary-3);
+}
+
 .attribution a:hover, .attribution a:active {
     text-decoration: underline;
     color: var(--primary-1);
