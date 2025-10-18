@@ -1,11 +1,11 @@
 
-# 3-column preview card component
+# 3-COLUMN PREVIEW CARD COMPONENT
 
-![Design preview for the [STATS PREVIEW CARD COMPONENT] challenge](preview.jpg)
+![Design preview for the [3-COLUMN PREVIEW CARD COMPONENT] challenge](preview.jpg)
 
 ## Overview
 
-This is my solution to the **[STATS PREVIEW CARD COMPONENT]** challenge on [Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj).  
+This is my solution to the **[3-COLUMN PREVIEW CARD COMPONENT]** challenge on [Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-).  
 The goal was to build a responsive component that matches the provided design using **HTML and CSS**.
 
 ---
@@ -18,14 +18,14 @@ The goal was to build a responsive component that matches the provided design us
 
 ## Live Demo
 
-🔗 **Live Site:** [View here](https://asha-16.github.io/Stats-preview-card-component/)
+🔗 **Live Site:** [View here](https://asha-16.github.io/3-column-preview-card-component/)
 
 ---
 
 ## Built With
 
 - Semantic **HTML5** markup  
-- **CSS3** with Flexbox and Grid
+- **CSS3** with Flexbox , Grid and media queries
 
 ---
 
