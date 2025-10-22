@@ -17,7 +17,7 @@ The goal was to build a responsive component that matches the provided design us
 
 ## Live Demo
 
-🔗 **Live Site:** [View here](https://asha-16.github.io/Social-proof-section/)
+🔗 **Live Site:** [View here](https://asha-16.github.io/Four-card-feature-section/)
 
 ---
 
