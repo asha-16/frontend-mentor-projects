@@ -1,0 +1,135 @@
+:root {
+    /*--------------- FONT FAMILY ---------------*/
+    --font-family: "Figtree", sans-serif;
+
+    /*--------------- FONT SIZE ---------------*/
+    --font-size-sm:1.2rem;
+    --font-size-md:1.6rem;
+    --font-size-lg:2rem;
+
+    /*--------------- FONT WEIGHT ---------------*/
+    --font-weight-regular:500;
+    --font-weight-bold:800;
+
+    /*--------------- LINE HEIGHT ---------------*/
+    --line-height:1.4;
+
+    /*--------------- COLORS ---------------*/
+    --primary-bg:hsl(47, 88%, 63%);
+    --card-bg:hsl(0, 0%, 100%);
+
+    --primary-text:hsl(0, 0%, 7%);
+    --secondary-text:hsl(0, 0%, 42%);
+
+    /*--------------- BORDER ---------------*/
+    --border: 1px solid hsl(0, 0%, 7%);
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    font-family: var(--font-family);
+    background-color: var(--primary-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.blog-card {
+    max-width: 35rem;
+    width: 90%;
+    background-color: var(--card-bg);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    border-radius: 2rem;
+    border: var(--border);
+    box-shadow: 5px 5px;
+}
+
+.blog-card__image {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+span{
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    padding: 1rem;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    border-radius: 0.5rem;
+    align-self: flex-start;
+}
+
+.blog-card__date {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-regular);
+    color: var(--primary-text);
+}
+
+.blog-card__title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-text);
+}
+
+.blog-card__text {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-regular);
+    color: var(--secondary-text);
+    line-height: var(--line-height);
+}
+
+.blog-card__profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile__avatar {
+    width: 3rem;
+}
+
+.profile__name {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-text);
+}
+
+
+
+.attribution {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-regular);
+}
+
+.attribution a:link, .attribution a:visited {
+    text-decoration: underline;
+    color: var(--primary-text);
+}
+
+.attribution a:hover, .attribution a:active {
+     font-size: var(--font-size-md);
+}
+
+
+@media(max-width: 50rem) {
+    html {
+        font-size: 50%;
+    }
+}
