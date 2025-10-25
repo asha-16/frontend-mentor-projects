@@ -1,0 +1,202 @@
+:root{
+    /*-------------- FONT FAMILY -------------- */
+    --font-family: "Barlow Semi Condensed", sans-serif;
+
+    /*-------------- FONT SIZE -------------- */
+    --font-size-sm:1rem;
+    --font-size-md:1.3rem;
+    --font-size-lg:1.6rem;
+
+    /*-------------- FONT WEIGHT -------------- */
+    --font-weight-regular:500;
+    --font-weight-bold:600;
+    
+    /*-------------- LINE HEIGHT -------------- */
+    --line-height-heading:1.2;
+    --line-height-body:1.5;
+
+    /*-------------- COLORS -------------- */
+    --color-body-bg:hsl(214, 17%, 92%);
+
+    /*------ CARDS BACKGROUND ------*/
+    --card-1-bg:hsl(263, 55%, 52%);
+    --card-2-bg:hsl(217, 19%, 35%);
+    --card-3-bg:hsl(0, 0%, 100%);
+    --card-4-bg:hsl(219, 29%, 14%);
+    --card-5-bg:hsl(0, 0%, 100%);
+
+    /*------ TEXT ------*/
+    --grey-text:hsl(217, 19%, 35%);
+    --white-text:hsl(214, 17%, 92%);
+    --white:hsl(0, 0%, 100%);
+    --black:hsl(0, 0%, 7%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(214, 17%, 92%);
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#testimonials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    width: 90%;
+}
+
+
+/* --------------- TESTIMONIAL CARDS ---------------*/
+.testimonial__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 0.8rem;
+}
+
+.card-1 {
+    background-color: var(--card-1-bg);
+    color: var(--white-text);
+}
+
+.card-2 {
+    background-color: var(--card-2-bg);
+    color: var(--white-text);
+}
+
+.card-3, .card-5   {
+    background-color: var(--card-3-bg);
+    color:var(--grey-text) ;
+}
+
+.card-4 {
+    background-color: var(--card-4-bg);
+   color: var(--white-text);
+}
+
+
+/* --------------- TESTIMONIAL HEADER ---------------*/
+
+.testimonial__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonial__image {
+    width: 3.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+}
+
+.testimonial__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial__name {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+}
+
+.testimonial__role {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-regular);
+}
+
+
+/* --------------- TESTIMONIAL CONTENT ---------------*/
+.testimonial__heading {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-heading);
+}
+
+.testimonial__text {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-body);
+}
+
+/* --------------- CARD SPANNING ---------------*/
+.card-1 {
+    grid-column: span 2; 
+}
+
+.card-4 {
+    grid-column: span 2;
+}
+
+.card-5 {
+    grid-column: 4 / 5;  /* occupies the last column */
+    grid-row: 1 / span 2; /* spans 2 rows vertically */
+}
+
+
+/* --------------- FOOTER ---------------*/
+
+.attribution {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-regular);
+    text-align: center;
+}
+
+
+.attribution a:link, .attribution a:visited {
+    text-decoration: none;
+    color: var(--card-1-bg);
+}
+
+.attribution a:hover, .attribution a:active {
+    text-decoration: underline;
+    color: var(--card-4-bg);
+}
+
+
+/* --------------- RESPONSIVE DESIGN ---------------*/
+@media(max-width:50rem) {
+
+    html {
+        font-size: 56.25%;
+    }
+
+    #testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .card-1 {
+        grid-column: span 1; 
+    }
+
+    .card-4 {
+        grid-column: span 1;
+    }
+
+    .card-5 {
+         grid-column: span 1;
+    }
+}
