@@ -1,0 +1,85 @@
+:root {
+    /*------------- FONT FAMILY -------------*/
+    --font-family: "Outfit", sans-serif;
+
+    /*------------- FONT SIZE -------------*/
+    --font-size-lg: 1.6rem;
+    --font-size-md: 1.4rem;
+    --font-size-sm: 1.2rem;
+
+    /*------------- FONT WEIGHT -------------*/
+    --font-weight-regular:400;
+    --font-weight-bold:700;
+
+    /*------------- COLORS -------------*/
+    --primary-bg:hsl(212, 45%, 89%);
+    --white:hsl(0, 0%, 100%);
+    --primary-text:hsl(218, 44%, 22%);
+    --secondary-text:hsl(216, 15%, 48%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--primary-bg);
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.qr-code-card {
+    background-color: var(--white);
+    max-width: 26rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.qr-code-image {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.card-heading {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-text);
+}
+
+.card-text {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-regular);
+    color: var(--secondary-text);
+    line-height: 1.5;
+}
+
+.attribution {
+    font-size: var(--font-size-sm);
+}
+
+.attribution a:link, .attribution a:visited {
+    text-decoration: none;
+    color: var(--primary-text);
+}
+
+.attribution a:hover, .attribution a:active {
+    text-decoration: underline;
+    font-size: var(--font-size-md);
+}
+
