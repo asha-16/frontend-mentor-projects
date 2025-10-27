@@ -136,12 +136,11 @@ body{
 
 .attribution a:link, .attribution a:visited {
     color: var(--white);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .attribution a:hover, .attribution a:active {
     color: var(--hover-bg);
-    text-decoration: underline;
 }
 
 
