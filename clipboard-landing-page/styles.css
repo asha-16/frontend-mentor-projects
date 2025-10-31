@@ -45,6 +45,7 @@ body {
     background-image: url("images/bg-header-desktop.png");
     background-repeat: no-repeat;
     background-position: top;
+    background-size: contain;
 }
 
 .main-container {
@@ -279,9 +280,9 @@ body {
 
 /* -------------- FOOTER -------------- */
 footer {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
     background-color: var(--color-footer-bg);
     padding: 2rem 4rem;
 }
