@@ -1,0 +1,129 @@
+:root {
+    /*----------- FONT FAMILY -----------*/
+    --font-family: "Public Sans", sans-serif;
+
+    /*----------- FONT SIZE -----------*/
+    --tiny-font-size:1.4rem;
+    --paragraph-font-size:1.6rem;
+    --h1-font-size:3rem;
+
+     /*----------- FONT SIZE -----------*/
+     --font-weight-regular:300;
+     --font-weight-semi-bold:400;
+     --font-weight-bold:700;
+
+    /*----------- COLORS -----------*/
+    --green:hsl(136, 64%, 51%);
+    --cyan:hsl(192, 69%, 51%);
+    --blue:hsl(233, 26%, 24%);
+
+    --body-bg-color:hsl(0, 0%, 98%);
+
+    --white:hsl(0, 100%, 100%);
+
+    --text-color:hsl(235, 5%, 56%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    font-family: var(--font-family);
+}
+
+/*---------------- REUSABLE COMPONNETS ------------------*/
+.request-invite-btn {
+    text-decoration: none;
+    font-size: var(--tiny-font-size);
+    font-weight: var(--font-weight-bold);
+    color: var(--white);
+    background-image: linear-gradient(to bottom left, var(--green), var(--cyan));
+    padding: 1.5rem 3rem;
+    border-radius: 4rem;
+}
+
+.paragraphs {
+    font-size: var(--paragraph-font-size);
+    font-weight: var(--font-weight-regular);
+    color: var(--text-color);
+}
+
+
+
+
+/*---------------- HEADER ------------------*/
+
+.header {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-item {
+    list-style: none;
+    font-size: var(--tiny-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+.hero-heading {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-weight-semi-bold);
+    color: var(--blue);
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero-content .request-invite-btn{
+    align-self: flex-start;
+}
+
+.hero-image-01 {
+    position: absolute;
+    z-index: -1;
+   
+}
+
+.hero-image-02 {
+    position: absolute;
+    z-index: 1;
+   
+}
